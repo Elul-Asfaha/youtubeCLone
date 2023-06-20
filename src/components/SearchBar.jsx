@@ -16,7 +16,7 @@ const SearchBar = () => {
             }}
         >
             <input
-                className='search-bar'
+                className='search-bar outline-none'
                 placeholder='Search...'
                 value=''
                 onChange={() => {}}

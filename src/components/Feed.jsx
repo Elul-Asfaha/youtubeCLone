@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
+import { SideBar, Videos } from "./";
 const Feed = () => {
     return (
         <Stack
@@ -17,6 +18,8 @@ const Feed = () => {
                     px: { sx: 0, md: 2 },
                 }}
             >
+                <SideBar />
+
                 <Typography
                     className=''
                     variant='body2'
@@ -24,6 +27,19 @@ const Feed = () => {
                 >
                     Copyright 2023 Elul Media
                 </Typography>
+            </Box>
+
+            <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
+                <Typography
+                    variant='h4'
+                    fontWeight='bold'
+                    mb={2}
+                    sx={{ color: "white" }}
+                >
+                    New
+                    <span className='text-[#FC1503]'> Videos</span>
+                </Typography>
+                <Videos videos={[]} />
             </Box>
         </Stack>
     );
