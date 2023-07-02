@@ -32,7 +32,7 @@ const VideoDetail = () => {
                         <ReactPlayer
                             url={`https://www.youtube.com/watch?v=${id}`}
                             className='react-player'
-                            style={{ minWidth: "100%" }}
+                            style={{ minWidth: "100%", maxWidth: "100%" }}
                             controls
                         />
                         <Typography
